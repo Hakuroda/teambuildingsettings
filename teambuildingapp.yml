@@ -3,6 +3,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Hakuroda/teambuildingsettings
-
-# Reference: https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.4.RELEASE/single/spring-cloud-config.html#_git_backend
+          uri: https://github.com/whyaneel/azsc-config-server.git
+          username: whyaneel
+          password: e8a92d753d0a55d54cd49233e3197e6f2eb491b8
