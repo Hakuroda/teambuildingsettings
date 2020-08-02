@@ -1,23 +1,8 @@
-security:
-  oauth2:
-    client:
-      clientId: teambuildingapp
-      client-secret: XUoJBrTtqXBonU5zMVzSUtrLPKRQztLUQE4poDoIR1QdcDfGgnGgJO5wbFC7xCEL
-      accessTokenUri: http://gateway/uaa/oauth/token
-      grant-type: client_credentials
-      scope: server
-
 spring:
-  zipkin:
-    sender:
-      type: web
-  main:
-    allow-bean-definition-overriding: true
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Hakuroda/teambuildingsettings
 
-server:
-  servlet:
-    context-path: /
-
-feign:
-  hystrix:
-    enabled: true
+# Reference: https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.4.RELEASE/single/spring-cloud-config.html#_git_backend
